@@ -52,3 +52,32 @@ const getSum=(a , b)=>{
     return total
 }
 // console.log(getSum(5 , 5))
+
+// অনেকগুলা সংখ্যার একটা array হবে। তারপর তোমার কাজ হবে array এর উপরে map ইউজ করে। প্রত্যেকটা উপাদানকে ৭ দিয়ে ভাগ করে ভাগফল আরেকটা array হিসেবে রাখবে। পুরা কাজটা এক লাইনে হবে। 
+
+const numbers = [100 , 200 , 300, 499, 10, 20, 18 ,12 , 44 , 99, 75, 22, 48 ,54 ,334 ,11, 23];
+
+
+const newNumbers = numbers.map(item => (item/7));
+console.log(newNumbers);
+// ৬. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো। array এর destructuring করবে আর সেটা করার জন্য তুমি এরে এর সেকেন্ড পজিশন এর উপাদান কে destructuring করে 'balance' নামক একটা ভেরিয়েবল এ রাখবে।
+
+const Employ = {
+    name : "Bashar Ahmed" ,
+    age: 24 ,
+    position: "Font-End Developer"
+}
+
+const {name , age , position} = Employ
+
+const Person = Employ.name ;
+// console.log(Person)
+
+// console.log(name);
+// console.log(age);
+// console.log(position)
+
+const weight = [55 , 65 , 70 , 75];
+
+const [first , blance , third , fourth] = weight;
+console.log(blance)
